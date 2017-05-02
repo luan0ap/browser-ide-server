@@ -7,7 +7,7 @@ module.exports = function() {
 
 	app.use('/files', createService({
 		name: 'files',
-		paginate: app.get('paginate')
+		paginate: app.get('paginate'),
 	}));
 
 	const service = app.service('files');

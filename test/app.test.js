@@ -20,13 +20,13 @@ describe('Feathers application tests', () => {
 		);
 	});
 
-	describe('404', function() {
+	describe('404', () => {
 		it('shows a 404 HTML page', () => {
 			return request({
 				url: `http://localhost:${ port }/path/to/nowhere`,
 				headers: {
-					'Accept': 'text/html'
-				}
+					'Accept': 'text/html',
+				},
 			}).catch(res => {
 				assert.equal(res.statusCode, 404);
 				assert.ok(res.error.indexOf('<html>') !== -1);
@@ -36,7 +36,7 @@ describe('Feathers application tests', () => {
 		it('shows a 404 JSON error without stack trace', () => {
 			return request({
 				url: `http://localhost:${ port }/path/to/nowhere`,
-				json: true
+				json: true,
 			}).catch(res => {
 				assert.equal(res.statusCode, 404);
 				assert.equal(res.error.code, 404);
