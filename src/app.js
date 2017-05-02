@@ -7,9 +7,9 @@ const feathersSocketio = require('feathers-socketio');
 const feathersConfiguration = require('feathers-configuration');
 
 const setup = require('./app.setup');
-const services = require('../services');
-const middleware = require('../middleware');
-const hooks = require('../hooks');
+const services = require('./services');
+const middleware = require('./middleware');
+const hooks = require('./hooks');
 
 const app = feathers();
 app.configure(feathersConfiguration(path.join(__dirname, '..')));

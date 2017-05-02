@@ -1,5 +1,3 @@
-/* globals describe, before, after, it */
-
 const assert = require('assert');
 const request = require('request-promise');
 const app = require('../src/app');

@@ -24,6 +24,7 @@
     "feathers-errors": "^2.7.1",
     "feathers-hooks": "^2.0.1",
     "feathers-hooks-common": "^3.2.0",
+    "feathers-memory": "^1.1.0",
     "feathers-rest": "^1.7.2",
     "feathers-socketio": "^1.6.0",
     "helmet": "^3.5.0",
