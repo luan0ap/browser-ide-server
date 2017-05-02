@@ -1,3 +1,5 @@
+const test = require('./hooks/test');
+
 module.exports = {
 	before: {
 		all: [],
@@ -10,7 +12,7 @@ module.exports = {
 	},
 
 	after: {
-		all: [],
+		all: [ test() ],
 		find: [],
 		get: [],
 		create: [],
