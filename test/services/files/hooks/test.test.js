@@ -1,5 +1,5 @@
-const assert = require('assert');
-const test = require('../../../../src/services/files/hooks/test');
+import assert from 'assert';
+import test from '../../../../src/services/files/hooks/test';
 
 describe('\'files\' service: \'test\' hook', () => {
 	it('runs the hook', () => {

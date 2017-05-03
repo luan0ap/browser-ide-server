@@ -1,3 +1,3 @@
-module.exports = function(data, connection, hook) {
+export default function(data, connection, hook) {
 	return data;
-};
+}

@@ -1,6 +1,6 @@
-const test = require('./hooks/test');
+import test from './hooks/test';
 
-module.exports = {
+export default {
 	before: {
 		all: [],
 		find: [],

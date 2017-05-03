@@ -1,8 +1,8 @@
-const createService = require('./cmd.class.js');
-const hooks = require('./cmd.hooks');
-const filters = require('./cmd.filters');
+import createService from './cmd.class.js';
+import hooks from './cmd.hooks';
+import filters from './cmd.filters';
 
-module.exports = function() {
+export default function() {
 	const app = this;
 
 	app.use('/cmd', createService({
@@ -14,4 +14,4 @@ module.exports = function() {
 
 	service.hooks(hooks);
 	service.filter(filters);
-};
+}

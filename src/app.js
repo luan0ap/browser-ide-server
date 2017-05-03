@@ -1,15 +1,15 @@
-const path = require('path');
+import path from 'path';
 
-const feathers = require('feathers');
-const feathersHooks = require('feathers-hooks');
-const feathersRest = require('feathers-rest');
-const feathersSocketio = require('feathers-socketio');
-const feathersConfiguration = require('feathers-configuration');
+import feathers from 'feathers';
+import feathersHooks from 'feathers-hooks';
+import feathersRest from 'feathers-rest';
+import feathersSocketio from 'feathers-socketio';
+import feathersConfiguration from 'feathers-configuration';
 
-const setup = require('./app.setup');
-const services = require('./services');
-const middleware = require('./middleware');
-const hooks = require('./hooks');
+import setup from './app.setup';
+import services from './services';
+import middleware from './middleware';
+import hooks from './hooks';
 
 const app = feathers();
 app.configure(feathersConfiguration(path.join(__dirname, '..')));
@@ -24,4 +24,4 @@ app.configure(services);
 app.configure(middleware);
 app.hooks(hooks);
 
-module.exports = app;
+export default app;

@@ -1,6 +1,6 @@
-const logger = require('./logger');
+import logger from './logger';
 
-module.exports = {
+export default {
 	before: {
 		all: [],
 		find: [],

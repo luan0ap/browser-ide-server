@@ -1,12 +1,12 @@
-const path = require('path');
+import path from 'path';
 
-const cors = require('cors');
-const helmet = require('helmet');
-const compress = require('compression');
-const bodyParser = require('body-parser');
-const favicon = require('serve-favicon');
+import cors from 'cors';
+import helmet from 'helmet';
+import compress from 'compression';
+import bodyParser from 'body-parser';
+import favicon from 'serve-favicon';
 
-module.exports = function() {
+export default function() {
 	const app = this;
 
 	app.use(cors());
@@ -15,4 +15,4 @@ module.exports = function() {
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: true }));
 	app.use(favicon(path.join(app.get('public'), 'favicon.ico')));
-};
+}

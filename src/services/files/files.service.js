@@ -1,8 +1,8 @@
-const createService = require('feathers-memory');
-const hooks = require('./files.hooks');
-const filters = require('./files.filters');
+import createService from 'feathers-memory';
+import hooks from './files.hooks';
+import filters from './files.filters';
 
-module.exports = function() {
+export default function() {
 	const app = this;
 
 	app.use('/files', createService({
@@ -14,4 +14,4 @@ module.exports = function() {
 
 	service.hooks(hooks);
 	service.filter(filters);
-};
+}

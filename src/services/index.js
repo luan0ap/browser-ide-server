@@ -1,9 +1,9 @@
-const files = require('./files/files.service');
-const cmd = require('./cmd/cmd.service.js');
+import files from './files/files.service';
+import cmd from './cmd/cmd.service.js';
 
-module.exports = function() {
+export default function() {
 	const app = this;
 
 	app.configure(files);
 	app.configure(cmd);
-};
+}

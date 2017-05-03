@@ -1,6 +1,6 @@
-const assert = require('assert');
-const request = require('request-promise');
-const app = require('../src/app');
+import assert from 'assert';
+import request from 'request-promise';
+import app from '../src/app';
 
 const port = app.get('port');
 
