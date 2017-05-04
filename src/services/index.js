@@ -1,5 +1,5 @@
 import files from './files/files.service';
-import cmd from './cmd/cmd.service.js';
+import cmd from './cmd/cmd';
 
 export default function() {
 	const app = this;
