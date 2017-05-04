@@ -16,6 +16,7 @@ export default function() {
 	);
 
 	app.use((req, res, next) => {
+		app.ssh = client; // FIXME
 		req.ssh = client;
 		return next();
 	});

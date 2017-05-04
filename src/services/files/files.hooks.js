@@ -1,8 +1,10 @@
-import test from './hooks/test';
-
 export default {
 	before: {
-		all: [],
+		all: [
+			(hook) => {
+				hook.params.ssh = hook.app.ssh;
+			},
+		],
 		find: [],
 		get: [],
 		create: [],
@@ -12,7 +14,7 @@ export default {
 	},
 
 	after: {
-		all: [ test() ],
+		all: [],
 		find: [],
 		get: [],
 		create: [],

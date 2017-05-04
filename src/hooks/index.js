@@ -12,7 +12,7 @@ export default {
 	},
 
 	after: {
-		all: [ logger() ],
+		all: [],
 		find: [],
 		get: [],
 		create: [],
@@ -22,7 +22,7 @@ export default {
 	},
 
 	error: {
-		all: [ logger() ],
+		all: [],
 		find: [],
 		get: [],
 		create: [],
