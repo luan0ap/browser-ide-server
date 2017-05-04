@@ -1,4 +1,4 @@
-import createService from 'feathers-memory';
+import createService from './files.class.js';
 import hooks from './files.hooks';
 import filters from './files.filters';
 

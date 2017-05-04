@@ -2,6 +2,11 @@
   "host": "localhost",
   "port": 3001,
   "public": "../public/",
+  "ssh": {
+    "host": "SSH_HOST",
+    "username": "SSH_USERNAME",
+    "privateKey": "SSH_PRIVATEKEY"
+  },
   "paginate": {
     "default": 10,
     "max": 50
